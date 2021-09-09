@@ -175,7 +175,7 @@ static LP_TIMER azureIoTConnectionTimer = {
 };
 
 static LP_TIMER azureIoTMsgSendTimer = {
-    .period = { 10, 0 }, 
+    .period = { 60, 0 }, 
 	.name = "azureIoTMsgSendTimer",
 	.handler =  SendDatatoAzureIoTCentralHandler 
 };
