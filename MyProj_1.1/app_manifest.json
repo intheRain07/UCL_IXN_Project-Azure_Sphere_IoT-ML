@@ -1,0 +1,43 @@
+{
+  "SchemaVersion": 1,
+  "Name": "MyProj_1.1",
+  "ComponentId": "e20fbba1-6497-4ca4-b256-2925048c3dca",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [
+    "--ConnectionType",
+    "DPS",
+    "--ScopeID",
+    "0ne00355408"
+  ],
+  "Capabilities": {
+    "Gpio": [
+      "$LED1_RED",
+      "$LED1_GREEN",
+      "$LED1_BLUE",
+      "$LED2_RED",
+      "$LED2_GREEN",
+      "$LED2_BLUE",
+      "$LED3_RED",
+      "$NETWORK_CONNECTED_LED"
+    ],
+    "I2cMaster": [
+      "$I2C0",
+      "$I2C1"
+    ],
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net",
+      "iotc-56f1afbc-42a1-4727-b772-f3a3f68e14f2.azure-devices.net",
+      "iotc-37163cc9-90e1-4cea-a9a2-3cc03afcf6dc.azure-devices.net",
+      "iotc-6948e3c2-4799-4f61-b661-8b07e5662491.azure-devices.net",
+      "iotc-1e54c9a6-1bc6-4e21-babc-6e8a6314715f.azure-devices.net",
+      "iotc-647bf3da-7e8c-4b8e-9b73-2e6cf8ce7aa6.azure-devices.net",
+      "iotc-8dde78ac-47b8-4b03-aead-b4520bfcad4a.azure-devices.net",
+      "iotc-7533bddd-60a2-4bd2-870f-66bb66bac4c6.azure-devices.net",
+      "iotc-f8fbcb86-5af5-4b6f-9da8-fcfce5a2a534.azure-devices.net",
+      "iotc-fd115607-103a-4e22-a3eb-5be37acf7b00.azure-devices.net",
+      "iotc-e00c8fcf-9096-4551-99d7-6a5a949ed18a.azure-devices.net"
+    ],
+    "DeviceAuthentication": "4f3f8a3e-60ee-4441-8720-7936c1a35f01"
+  },
+  "ApplicationType": "Default"
+}
