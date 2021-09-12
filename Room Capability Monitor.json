@@ -1,0 +1,80 @@
+[
+  {
+    "@id": "dtmi:com:example:azuresphere:labmonitor;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:NumOfPeople;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "NumOfPeople"
+        },
+        "name": "NumOfPeople",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:MsgID;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "MsgID"
+        },
+        "name": "MsgID",
+        "schema": "integer"
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:DesiredMaxCapability;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "DesiredMaxCapability"
+        },
+        "name": "DesiredMaxCapability",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:ReportedCapabilityState;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ReportedCapabilityState"
+        },
+        "name": "ReportedCapabilityState",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:OverflowWarning;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "OverflowWarning"
+        },
+        "name": "OverflowWarning"
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:MaxCapability;1",
+        "@type": "Telemetry",
+        "displayName": {
+          "en": "MaxCapability"
+        },
+        "name": "MaxCapability",
+        "schema": "double"
+      },
+      {
+        "@id": "dtmi:com:example:azuresphere:labmonitor:CancelWarning;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "CancelWarning"
+        },
+        "name": "CancelWarning"
+      }
+    ],
+    "displayName": {
+      "en": "Room Capability Monitor"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  }
+]
